@@ -1,0 +1,77 @@
+body {
+    background-image: url(https://images.wallpapersden.com/image/download/minecraft-minimalist_a25sZWaUmZqaraWkpJRnamtlrWZpaWU.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1460px;
+}
+button {
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+}
+.contaner {
+    display: flex;
+}
+
+.item + .item {
+    margin-left: 5%;
+}
+
+.item {
+    text-align: center;
+}
+.contaner {
+    display: content;
+    justify-content: center;
+}
+.topnav  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item {
+    width: 48%;
+    height: auto;
+    margin-bottom: 2%;
+}
+.topnav a:not(.home) {
+    float: left;
+    color: black;
+    border: solid black;
+    padding: 20px 30px;
+    border-radius: 50px 50px;
+    font-size: 40px;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.topnav a:hover:not(.home) {
+    border-radius: 20px 20px;
+}
+
+.test-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.images {
+    flex: 0 34%;
+    height: 100px;
+    margin-bottom: 20%;
+}
+
+.h1 {
+    font-size: 100px;
+    align-self: center;
+}
+h1 {text-align: center;}
+.break {
+    height: 0.1;
+}
+.break2 {
+    height: 100px;
+    width: 50px;
+}
+.titlebreak {
+    height: 100px;
+}

@@ -1,39 +1,12 @@
 body {
-    background-image: url(https://images.wallpapersden.com/image/download/minecraft-minimalist_a25sZWaUmZqaraWkpJRnamtlrWZpaWU.jpg);
+    background-image: url("./img/foxbackground.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 1460px;
-}
-button {
-    background-color: transparent;
-    color: black;
-    border-radius: 10px;
-}
-.contaner {
+    background-size: cover;
     display: flex;
-}
-
-.item + .item {
-    margin-left: 5%;
-}
-
-.item {
-    text-align: center;
-}
-.contaner {
-    display: content;
-    justify-content: center;
-}
-.topnav  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.item {
-    width: 48%;
-    height: auto;
-    margin-bottom: 2%;
-}
+    flex-direction: column;
+    align-items: center;
+}   /*För att backrundsbilden är rätt stolek och att den stannar på samma plats oavsätt hur man scrollar*/
 .topnav a:not(.home) {
     float: left;
     color: black;
@@ -41,40 +14,98 @@ button {
     padding: 20px 30px;
     border-radius: 50px 50px;
     font-size: 40px;
-    justify-content: space-around;
     transition: 0.5s;
-}
-
-.topnav a:hover:not(.home) {
+    display: flex;
+}   /*För att få topnaven som den är*/
+.topnav {
+    margin: 60px;
+}   /*För att separera topnav med det under den*/
+.topnav a:hover {
     border-radius: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.185);
+}   /*För "animationen" när man hovrar över topnav knapparna*/
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    font-size: 40px;
+    border-radius: 50px 50px;
+    border: solid black;
+    transition: 0.5s;
+}   /*Hur själva knappen till dropdown knappen*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
 }
-
-.test-container {
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    border: solid black;
+    border-radius: 20px 20px;
+}   /*Hur knapparna ser ut inuti*/
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 20px 20px;
+} /*Knapparna har en liten bakgrund*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}   /*För att dropdownen inte ska försvinna när man hovrar över dem*/
+.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+    margin: 200px;
+}   /*Se till att alla produkter och text stannar på rätt plats*/
 .images {
     flex: 0 34%;
-    height: 100px;
+    height: 300px;
+    width: 140px;
     margin-bottom: 20%;
-}
-
+}   /*Bilderna är rätt storlek*/
 .h1 {
     font-size: 100px;
     align-self: center;
+    text-align: center;
+}   /*Så att "Products" är rätt storlek och kan befinner sig på rätt plats*/
+h2 {
+    font-size: 100px;
+}   /*Så att "Minecraft Maniacs" är rätt storlek*/
+.container-2 {
+    background-color: transparent;
+    align-self: center;
+    justify-self: center;
+    height: 600px;
+    width: 600px;
+}   /*Att ha en bra container att skriva information i*/
+.container-3 {
+    float: left;
+    color: black;
+    border: solid black;
+    padding: 20px 30px;
+    border-radius: 50px 50px;
+    font-size: 40px;
+    display: flex;
+    margin: 50px;
+}   /*För att få contacts informationen i bublor, platsen de befinner sig i och font storleken*/
+p {
+    font-size: 30px;
+}   /*Storlek på dokumantationens text*/
+.logo > img{
+    width: 100%;
+    height: 100%;
 }
-h1 {text-align: center;}
-.break {
-    height: 0.1;
-}
-.break2 {
-    height: 100px;
-    width: 50px;
-}
-.titlebreak {
-    height: 100px;
-}
-.about-us {
-    height: 100px;
+/*Storlek på Loggan*/
+.logo {
+    width: 150px;
+    height: 150px;
 }
